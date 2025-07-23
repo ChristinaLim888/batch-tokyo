@@ -1,0 +1,11 @@
+/* yg link tidak akan berubah,krn elemen <a> tdk mewarisi nilai dari properti color */
+body {
+    font-family : arial;
+    color: darkgrey;
+}
+
+/* Saya akan mewarisi apapun dari orang tua saya */
+a {
+    color: inherit;
+}
+

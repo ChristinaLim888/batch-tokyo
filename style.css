@@ -1,0 +1,82 @@
+h1 {
+    color: lightblue;
+    font-family: arial;
+    font-size: 50px;
+}
+
+/* Belajar Styling */
+.satu {
+    font-family: georgia; serif;
+    font-style: italic;
+    line-height: 30px;
+    font-size: 15px;
+    color: royalblue ;
+    text-align: left ;
+    text-indent: 100px ;
+    text-decoration: none ;
+    text-transform: none ;
+    letter-spacing: 3px ;
+    
+}
+.dua {
+    text-align: right ;
+    text-decoration: underline ;
+    text-transform: lowercase ;
+    word-spacing: 20px ;
+}
+.tiga {
+    text-align: center ;
+    text-decoration: overline ;
+    text-transform: uppercase ;
+}
+.empat {
+    text-align: justify ;
+    text-decoration: line-through ;
+    text-transform: capitalize ;
+}
+/* Belajar Background */
+/* Singkat: Background: lightgrey, url(img/8.webp) top left no-repeat; */
+body {
+    /* background-color: lightpink; */
+    background-image: url(img/4.png);
+    /* pilih salah satu */
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-X; */
+    /* background-repeat: repeat-Y; */
+    /* background-repeat: norepeat; */
+
+    /* background-position: top left ; */
+    /* background-position: top center ; */
+    /* background-position: top right ; */
+    /* background-position: center left ; */
+    /* background-position: center center ; */
+    /* background-position: center right ; */
+    /* background-position: bottom left ; */
+    /* background-position: bottom center ; */
+    /* background-position: bottom right ; */
+    /* background-position: 10% 60% ; */
+    /* yg terakhir x-pos dan y-pos */
+    /* background-position:  ; */
+}
+
+/* Selektor */
+ul li a {
+    color: orange;
+}
+ol li a { 
+    color: red;
+}
+#p1 {
+    color: blue;
+}
+.p2 {
+    color: green;
+}
+.cetak-tebal {
+    font-weight: bold;
+}
+p.cetak-tebal {
+    font-size: 30px;
+}
+
+

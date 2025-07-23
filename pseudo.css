@@ -1,0 +1,54 @@
+.hello {
+    color: orange;
+}
+
+/* Pseudo Class 1 : Berdasarkan link */
+
+/* ketika kursor di arahkan maka akan berubah */
+.hello:hover {
+    color: green;
+    font-family: arial;
+    font-size: 20px;
+}
+
+/* ketika diklik akan menjadi miring */
+.hello:active {
+    font-style: italic; 
+}
+
+/* artinya jika sudah pernah kunjungi maka tulisan jadi warna merah */
+.hello:visited {
+    color: red;
+}
+
+/* Pseudo Class 2 : Berdasarkan posisi elemen*/
+/* contoh: ul=org tua(anak ul hanya 1 yaitu li), li=anak nya ul, li=anak nya ada 10 */
+
+li:first-child a {
+    color:green;
+}
+
+li:last-child a {
+    color: orange;
+}
+
+/* bisa di pilih secara random: li:nth-child(5) a {} > yg berubah warna di anak ke 5 aja */
+/* Even = genap, odd = ganjil */
+/* 2n = setiap kelipatan 2 akan berubah warna> no: 2 4 6 8 10 */
+/* 3n-2 = setiap kelipatan 3 tapi mulai dari 1 (knp -2 = krn dr posisi 3 ke angka 1 ada 2 langkah) */
+li:nth-child(3n+2) a {
+color: pink;
+}
+li:nth-child(odd) a:hover {
+    color: #bc6c25;
+}
+
+/* utk P tdk bisa pakai Pseudo seperti di atas, olehkarena itu pakai yg dibwh ini */
+p:first-of-type {
+    color: #457b9d;
+}
+p:last-of-type {
+    color: #ff006e;
+}
+
+
