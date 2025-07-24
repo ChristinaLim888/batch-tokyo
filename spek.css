@@ -1,0 +1,114 @@
+/* panggil nya lebih spesifik maka nya bisa sesuai warna */
+/* inline: id: class :element */
+.p1 {
+  color: red;
+}
+
+/* hasil spesifikasinya 0102 */
+ul#sarapan li {
+  color: green;
+}
+/* ukurannya lebih berat supaya bisa terpanggil utk elemen yg diinginkan */
+ul#sarapan li.favorit {
+  color: purple;
+}
+
+/* Tumpulin */
+div {
+  width: 400px;
+  height: 300px;
+  margin: 50px auto;
+  background-color: orange;
+
+  background-repeat: no-repeat;
+  /* biar gambarnya penuh sesuai bentuk */
+  background-size: cover;
+
+  /* supaya berada di left */
+  display: inline-block;
+  /* radius bisa pakai % juga */
+  /* border-radius: 100px; */
+  border-radius: 0 50% 0% 50%;
+  /* posisi tulisan tengah atas */
+  text-align: center;
+  /* ukuran height nya sama dgn kotak spy berada di tengah */
+  line-height: 300px;
+}
+.bgwoman {
+  background-image: url("./img/woman.jpg");
+}
+.radius {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  background-color: pink;
+  box-shadow: 0 2px 5px 0;
+  /* Memberi bentuk yg unik */
+  border-radius: 50% 10% 50% 10%/ 10% 50% 10% 50%;
+}
+
+/* radius krna kena radius parent */
+.radius2 {
+  width: 200px;
+  height: 200px;
+  /* kenapa inline ny gk berfungsi ya????????? apakah karna sudah ada di kelas .radius??? turunan kah?????????/*/
+  display: inline-block;
+  border-radius: 10% 30% 40% 50%/ 52% 45% 35% 25%;
+  /* ujung wrna= 0.8 diberi opacity/transparancy (a utk transparancy) */
+  background-color: rgba(255, 102, 0, 0.8);
+  box-shadow: 0 2px 5px 0;
+}
+
+.shadow {
+  width: 300px;
+  height: 300px;
+  background-color: #39b54a;
+  margin: 50px;
+  /* kanan, bawah, blur, bayangan tmbh besar dr ukuran blur kemudian baru blur*/
+  box-shadow: 5px 50px rgba(0, 0, 0, 0.75);
+}
+
+/* Bagaimana caranya agar textnya keluar dari box?????????????????? */
+.textshadow {
+  font-size: 40px;
+  font-family: arial;
+  text-align: center;
+  text-shadow: 5px 5px 10px green, -5px -5px 10px red;
+}
+
+.gradient {
+  width: 600px;
+  height: 300px;
+  margin: 70px;
+  /* apakah radius ny warisan? apakah tdk bisa di non-aktifkan????????????? */
+  /* background-radius: ; */
+  background-color: salmon;
+  /* background-image: linear-gradient(pink,grey,lightgreen); */
+  /* gradient pakai sudut */
+  /* background-image: linear-gradient(78deg,pink,lightblue); */
+
+  /* gradient dengan arah */
+  background-image: linear-gradient(to bottom, pink, lightblue);
+  /* background-image: linear-gradient(to top,pink,lightblue); */
+  /* background-image: linear-gradient(to left,pink,lightblue); */
+  /* background-image: linear-gradient(to right,purple,lightblue); */
+  /* background-image: linear-gradient(to left top,pink,lightblue); */
+  /* background-image: linear-gradient(to left bottom,pink,lightblue); */
+  /* background-image: linear-gradient(to right top,pink,lightblue); */
+  /* background-image: linear-gradient(to right bottom,pink,lightblue); */
+}
+
+/* ini juga masih kena radius, mau tanya coach aja????????????????? */
+.radial {
+  width: 600px;
+  height: 300px;
+  margin: 70px;
+  /* background-color: #065084; */
+  /* background-image: radial-gradient(#78B9B5 10%,#EA5B6F 50%,#819067 30%); */
+  /* tipe  jangkauan  posisi-Y(vertikal:top,center,bottom)  posisi-X(horizontal:left,center,right)  Warna1   warna2   warna3*/
+  /* jangkauan ada 4: closest-corner, closest-side, farthest-corner, farhtest-side */
+  /* background-image: radial-gradient(closest-corner,pink,#819067); */
+  /* background-image: radial-gradient(closest-side,pink,#819067); */
+  /* background-image: radial-gradient(farthest-corner,#D6D85D,#819067); */
+  background-image: radial-gradient(farthest-side, #d6d85d, #819067);
+}
