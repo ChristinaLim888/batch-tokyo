@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    grid-template-areas:
+    "head head head"
+    "side content content"
+    "foot foot foot";
+grid-template-rows: 30px auto 30px;
+width: 200px;
+height: 200px;
+background-color: pink;
+border: 20px solid grey;
+}
+
+header { 
+    grid-area: head;
+}
+
+
+article { 
+    grid-area: content;
+}
+
+
+aside { 
+    grid-area: side;
+}

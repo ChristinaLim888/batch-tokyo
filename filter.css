@@ -35,7 +35,7 @@ img {
 /* biar kelihatan perubahannya,maka di kasi transisi, jadi transform di atas di hapus aja, tapi dibuat melalui hover biar terlihat perbedaannya*/
 /* arti: ketika kotaknya saya hover,lalu saya transform*/
 .trans:hover {
-  /* transform : scale(1.3); */
+  transform : scale(1.3);
 
   /* ukuran berubah dari scale X dan Y */
   /* transform : scale(1.3, 2); */
@@ -58,7 +58,7 @@ img {
   /* transform : translate(50px, 100px); */
 
   /* transform bisa juga dikombinasi */
-  transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+  /* transform: rotate(180deg) rotateX(180deg) rotateY(180deg); */
 
   /* supaya perubahannya halus maka dikasi transisi.
     arti: ketika kursor mengarah ke elemen,maka akan bertransisi dengan lamanya durasi dari transition*/
